@@ -1,10 +1,9 @@
 {
   "pages": [
-    "pages/management/order/order",
-    "pages/management/evaluation/evaluation",
-    "pages/management/goods/goods",
-    "pages/management/mine/mine",
-    "pages/management/goods/add/add"
+    "pages/server/order/order",
+    "pages/server/evaluation/evaluation",
+    "pages/server/goods/goods",
+    "pages/server/mine/mine"
   ],
   "tabBar": {
     "custom": true,
@@ -13,16 +12,16 @@
     "backgroundColor": "#000000",
     "list": [
       {
-        "pagePath": "pages/management/order/order"
+        "pagePath": "pages/server/order/order"
       },
       {
-        "pagePath": "pages/management/evaluation/evaluation"
+        "pagePath": "pages/server/evaluation/evaluation"
       },
       {
-        "pagePath": "pages/management/goods/goods"
+        "pagePath": "pages/server/goods/goods"
       },
       {
-        "pagePath": "pages/management/mine/mine"
+        "pagePath": "pages/server/mine/mine"
       }
     ]
   },

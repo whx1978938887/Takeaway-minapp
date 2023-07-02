@@ -5,22 +5,22 @@ Component({
         {
           icon: "todo-list-o",
           text: "订单",
-          url: "/pages/management/order/order",
+          url: "/pages/server/order/order",
         },
         {
           icon: "star-o",
           text: "评价",
-          url: "/pages/management/evaluation/evaluation",
+          url: "/pages/server/evaluation/evaluation",
         },
         {
           icon: "shop-o",
           text: "商品",
-          url: "/pages/management/goods/goods",
+          url: "/pages/server/goods/goods",
         },
         {
           icon: "user-circle-o",
           text: "我的",
-          url: "/pages/management/mine/mine",
+          url: "/pages/server/mine/mine",
         },
       ],
     },
