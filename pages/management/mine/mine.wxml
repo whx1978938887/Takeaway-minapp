@@ -1,0 +1,18 @@
+<view style="height:100%;background:#f2f3f5;">
+    <view class="avatar">
+        <view>
+            <van-image round width="5rem" height="5rem" src="http://wuhaixuan.top/github.jpg" />
+            <view class="user-name">用户名</view>
+        </view>
+    </view>
+    <view style="background:#f2f3f5;">
+        <view class="data">
+            <van-cell-group inset>
+                <van-cell title="单元格" value="内容" />
+                <van-cell title="单元格" value="内容" />
+                <van-cell title="单元格" value="内容" />
+                <van-cell title="单元格" value="内容" />
+            </van-cell-group>
+        </view>
+    </view>
+</view>
