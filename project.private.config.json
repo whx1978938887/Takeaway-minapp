@@ -3,5 +3,6 @@
   "projectname": "takeaway-minapp",
   "setting": {
     "compileHotReLoad": false
-  }
+  },
+  "libVersion": "2.32.3"
 }
