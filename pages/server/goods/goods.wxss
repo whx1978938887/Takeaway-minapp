@@ -1,6 +1,12 @@
-.text{
-    padding: 5px;
+.text {
+  padding: 5px;
 }
-.tab-content{
-    overflow: scroll;
+.tab-content {
+  overflow: scroll;
+}
+.van-sidebar-item {
+  padding-right: 20px !important;
+}
+.van-card{
+  background-color: white !important;
 }
