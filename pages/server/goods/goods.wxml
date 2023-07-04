@@ -1,12 +1,13 @@
 <l-tabs bind:linchange="changeTabs">
     <l-tabpanel tab="全部" key="one" slot="one">
         <view class="tab-content" style="height:{{scrollHeight+'px'}}">
-            <!-- DOING: 左右联动 -->
             <van-col span="6">
-                <van-sidebar active-key="{{ activeIndex }}" bind:change="onChange">
-                    <van-sidebar-item title="标签名" />
-                    <van-sidebar-item title="标签名" />
-                </van-sidebar>
+                <scroll-view scroll-y="{{true}}" class="scroll-view-style" style="height:{{scrollHeight+'px'}};width:80px" scroll-with-animation="{{true}}">
+                    <van-sidebar class="sidebar-style" active-key="{{ activeIndex }}" bind:change="onChange">
+                        <van-sidebar-item title="标签名" />
+                        <van-sidebar-item title="标签名" />
+                    </van-sidebar>
+                </scroll-view>
             </van-col>
             <van-col span="18">
                 <scroll-view scroll-y="{{true}}" style="height:{{scrollHeight+'px'}}" scroll-into-view="{{toView}}" scroll-with-animation="{{true}}" bindscroll="scroll">

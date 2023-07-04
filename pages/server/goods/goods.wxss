@@ -10,3 +10,11 @@
 .van-card {
   background-color: white !important;
 }
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.scroll-view-style{
+  background-color: #f7f8fa;
+}
