@@ -1,30 +1,84 @@
 <l-tabs bind:linchange="changeTabs">
     <l-tabpanel tab="全部" key="one" slot="one">
         <view class="tab-content" style="height:{{scrollHeight+'px'}}">
+            <!-- DOING: 左右联动 -->
             <van-col span="6">
-                <van-sidebar active-key="{{ activeKey }}">
-                    <van-sidebar-item title="标签名" />
+                <van-sidebar active-key="{{ activeIndex }}" bind:change="onChange">
                     <van-sidebar-item title="标签名" />
                     <van-sidebar-item title="标签名" />
                 </van-sidebar>
             </van-col>
             <van-col span="18">
-                <van-cell-group class="space">
-                    <van-card num="2" tag="标签" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
-                        <view slot="footer">
-                            <text class="text">编辑</text>
-                            <text class="text">下架</text>
-                        </view>
-                    </van-card>
-                </van-cell-group>
-                <van-cell-group class="space">
-                    <van-card num="2" tag="标签" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
-                        <view slot="footer">
-                            <text class="text">编辑</text>
-                            <text class="text">下架</text>
-                        </view>
-                    </van-card>
-                </van-cell-group>
+                <scroll-view scroll-y="{{true}}" style="height:{{scrollHeight+'px'}}" scroll-into-view="{{toView}}" scroll-with-animation="{{true}}" bindscroll="scroll">
+                    <view class="content-item" id="content0">
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签0" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签0" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签0" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                    </view>
+                    <view class="content-item" id="content1">
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签1" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签1" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签1" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签1" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                        <van-cell-group class="space">
+                            <van-card num="2" tag="标签1" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
+                                <view slot="footer">
+                                    <text class="text">编辑</text>
+                                    <text class="text">下架</text>
+                                </view>
+                            </van-card>
+                        </van-cell-group>
+                    </view>
+                </scroll-view>
             </van-col>
         </view>
     </l-tabpanel>
