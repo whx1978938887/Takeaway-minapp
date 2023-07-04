@@ -41,6 +41,8 @@ Page({
     let scrollTop = e.detail.scrollTop;
     let current = this.data.activeIndex;
     if (scrollTop >= this.distance) {
+      //页面向上滑动
+      //如果右侧当前可视区域最底部到顶部的距离超过当前列表选中项距顶部的高度（且没有下标越界），则更新左侧选中项
       if (
         current + 1 < this.data.heightArr.length &&
         scrollTop >= this.data.heightArr[current]
@@ -48,14 +50,14 @@ Page({
         this.setData({
           activeIndex: current + 1,
         });
-        console.log(scrollTop);
-      } else {
-        if (current - 1 >= 0 && scrollTop < this.data.heightArr[current - 1]) {
-          this.setData({
-            activeIndex: current - 1,
-          });
-          console.log(scrollTop);
-        }
+      }
+    } else {
+      //页面向下滑动
+      //如果右侧当前可视区域最底部到顶部的距离小于当前列表选中的项距顶部的高度，则更新左侧选中项
+      if (current - 1 >= 0 && scrollTop < this.data.heightArr[current - 1]) {
+        this.setData({
+          activeIndex: current - 1,
+        });
       }
     }
     this.distance = scrollTop;
