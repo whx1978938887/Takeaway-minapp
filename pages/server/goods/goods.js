@@ -33,7 +33,6 @@ Page({
       toView: "content" + e.detail,
     });
   },
-  //FIXME: 右侧滚动区域回到最顶端时，左侧标签无法回到初始状态
   scroll(e) {
     if (this.data.heightArr.length == 0) {
       return;
