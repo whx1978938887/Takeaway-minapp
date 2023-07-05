@@ -1,4 +1,4 @@
-<l-tabs bind:linchange="changeTabs">
+<l-tabs>
     <l-tabpanel tab="全部" key="one" slot="one">
         <view class="tab-content" style="height:{{scrollHeight+'px'}}">
             <van-col span="6">
@@ -83,14 +83,13 @@
             </van-col>
             <!-- TODO: 管理分类增删改查 -->
             <!-- TODO: 排序商品 -->
-            <!-- TODO: 新增商品页面 -->
             <view class="editor-bar">
                 <view class="editor-classify">管理分类</view>
                 <view class="editor-button">
                     <van-icon name="filter-o" color="#1989fa" />
                     排序商品
                 </view>
-                <view class="editor-button">
+                <view class="editor-button" bind:tap="onClick">
                     <van-icon name="add-o" color="#1989fa" />
                     新增商品
                 </view>

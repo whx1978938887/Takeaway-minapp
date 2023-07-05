@@ -71,5 +71,9 @@ Page({
       this.data.heightArr.push(height);
     }
   },
-  changeTabs() {},
+  onClick() {
+    wx.navigateTo({
+      url: "/pages/server/add/add",
+    });
+  },
 });

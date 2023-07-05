@@ -1,0 +1,13 @@
+.van-cell-group {
+  margin-top: 10px !important;
+}
+.van-cell{
+    background-color: #f7f8fa !important;
+}
+.lin-image-picker__item{
+    margin-left: 16px;
+}
+.button-style{
+  margin-top: 10px;
+  text-align: center;
+}

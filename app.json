@@ -3,7 +3,8 @@
     "pages/server/order/order",
     "pages/server/evaluation/evaluation",
     "pages/server/goods/goods",
-    "pages/server/mine/mine"
+    "pages/server/mine/mine",
+    "pages/server/add/add"
   ],
   "tabBar": {
     "custom": true,
@@ -50,6 +51,7 @@
     "van-field": "@vant/weapp/field/index",
     "van-uploader": "@vant/weapp/uploader/index",
     "l-tabs": "lin-ui/tabs/index",
-    "l-tabpanel": "lin-ui/tabpanel/index"
+    "l-tabpanel": "lin-ui/tabpanel/index",
+    "l-image-picker": "lin-ui/image-picker/index"
   }
 }
