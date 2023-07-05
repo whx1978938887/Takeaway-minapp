@@ -15,6 +15,27 @@
   height: 0;
   color: transparent;
 }
-.scroll-view-style{
+.scroll-view-style {
   background-color: #f7f8fa;
+}
+.editor-bar {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+}
+.editor-classify {
+  display: inline-block;
+  padding: var(--sidebar-padding, 20px 12px 20px 8px);
+  background-color: #f7f8fa;
+  font-size: var(--sidebar-font-size, 14px);
+  line-height: var(--sidebar-line-height, 20px);
+  border-left: 3px solid transparent;
+}
+.editor-button {
+  float: right;
+  color: #1989fa;
+  background-color: white;
+  padding: var(--sidebar-padding, 20px 12px 20px 8px);
+  font-size: var(--sidebar-font-size, 14px);
+  line-height: var(--sidebar-line-height, 20px);
 }

@@ -2,7 +2,7 @@
     <l-tabpanel tab="全部" key="one" slot="one">
         <view class="tab-content" style="height:{{scrollHeight+'px'}}">
             <van-col span="6">
-                <scroll-view scroll-y="{{true}}" class="scroll-view-style" style="height:{{scrollHeight+'px'}};width:80px" scroll-with-animation="{{true}}">
+                <scroll-view scroll-y="{{true}}" class="scroll-view-style" style="height:{{scrollHeight-60+'px'}};width:80px" scroll-with-animation="{{true}}">
                     <van-sidebar class="sidebar-style" active-key="{{ activeIndex }}" bind:change="onChange">
                         <van-sidebar-item title="标签名" />
                         <van-sidebar-item title="标签名" />
@@ -10,7 +10,7 @@
                 </scroll-view>
             </van-col>
             <van-col span="18">
-                <scroll-view scroll-y="{{true}}" style="height:{{scrollHeight+'px'}}" scroll-into-view="{{toView}}" scroll-with-animation="{{true}}" bindscroll="scroll">
+                <scroll-view scroll-y="{{true}}" style="height:{{scrollHeight-60+'px'}}" scroll-into-view="{{toView}}" scroll-with-animation="{{true}}" bindscroll="scroll">
                     <view class="content-item" id="content0">
                         <van-cell-group class="space">
                             <van-card num="2" tag="标签0" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}">
@@ -81,6 +81,20 @@
                     </view>
                 </scroll-view>
             </van-col>
+            <!-- TODO: 管理分类增删改查 -->
+            <!-- TODO: 排序商品 -->
+            <!-- TODO: 新增商品页面 -->
+            <view class="editor-bar">
+                <view class="editor-classify">管理分类</view>
+                <view class="editor-button">
+                    <van-icon name="filter-o" color="#1989fa" />
+                    排序商品
+                </view>
+                <view class="editor-button">
+                    <van-icon name="add-o" color="#1989fa" />
+                    新增商品
+                </view>
+            </view>
         </view>
     </l-tabpanel>
     <l-tabpanel tab="已上架" key="two" slot="two">
