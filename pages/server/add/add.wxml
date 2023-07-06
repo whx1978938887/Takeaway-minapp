@@ -14,7 +14,7 @@
     </van-field>
 </van-cell-group>
 <van-cell-group inset>
-    <van-field required value="{{ classify }}" label="商品分类" placeholder="商品分类" border="{{ false }}" />
+    <van-field required label="商品分类" placeholder="请输入商品分类" border="{{ false }}" />
 </van-cell-group>
 <van-cell-group inset>
     <van-field required value="{{ food }}" label="主食" border="{{ false }}">
@@ -24,4 +24,3 @@
 <view class="button-style">
     <van-button round type="info">保存</van-button>
 </view>
-<m-dropdown title="" nowId="{{curfId}}" nameList="{{fruits}}" nowName="{{curfruitName}}" placeholder="请选择水果" bind:handleChange="changeFruit" />

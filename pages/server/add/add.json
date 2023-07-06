@@ -1,6 +1,3 @@
 {
-  "component": true,
-  "usingComponents": {
-    "m-dropdown": "/components/m-dropdown/m-dropdown"
-  }
+  "component": true
 }
