@@ -29,7 +29,7 @@
   background-color: #f7f8fa;
   font-size: var(--sidebar-font-size, 14px);
   line-height: var(--sidebar-line-height, 20px);
-  border-left: 3px solid transparent;
+  border-left: 4px solid transparent;
 }
 .editor-button {
   float: right;

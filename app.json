@@ -52,6 +52,8 @@
     "van-uploader": "@vant/weapp/uploader/index",
     "l-tabs": "lin-ui/tabs/index",
     "l-tabpanel": "lin-ui/tabpanel/index",
-    "l-image-picker": "lin-ui/image-picker/index"
+    "l-image-picker": "lin-ui/image-picker/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "l-icon": "lin-ui/icon/index"
   }
 }

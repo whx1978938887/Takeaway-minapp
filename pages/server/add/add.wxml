@@ -4,17 +4,24 @@
     <van-field required value="{{ name }}" label="商品标题" placeholder="请输入商品标题" border="{{ false }}" />
 </van-cell-group>
 <van-cell-group inset>
-    <van-field required value="{{ price }}" label="商品价格" placeholder="请输入价格" border="{{ false }}" />
+    <van-field required label="商品价格" border="{{ false }}">
+        <van-stepper slot="input" value="{{ price }}" min="0" decimal-length="{{ 1 }}" />
+    </van-field>
 </van-cell-group>
 <van-cell-group inset>
-    <van-field required value="{{ fees }}" label="配送费" placeholder="请输入" border="{{ false }}" />
+    <van-field required label="配送费" border="{{ false }}">
+        <van-stepper slot="input" value="{{ fees }}" min="0" decimal-length="{{ 1 }}" />
+    </van-field>
 </van-cell-group>
 <van-cell-group inset>
     <van-field required value="{{ classify }}" label="商品分类" placeholder="商品分类" border="{{ false }}" />
 </van-cell-group>
 <van-cell-group inset>
-    <van-field required value="{{ food }}" label="主食" placeholder="主食" border="{{ false }}" />
+    <van-field required value="{{ food }}" label="主食" border="{{ false }}">
+        <view slot="input">+新增</view>
+    </van-field>
 </van-cell-group>
 <view class="button-style">
     <van-button round type="info">保存</van-button>
 </view>
+<m-dropdown title="" nowId="{{curfId}}" nameList="{{fruits}}" nowName="{{curfruitName}}" placeholder="请选择水果" bind:handleChange="changeFruit" />
