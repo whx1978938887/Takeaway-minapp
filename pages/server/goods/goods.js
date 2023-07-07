@@ -72,7 +72,7 @@ Page({
     }
   },
   onClick() {
-    wx.navigateTo({
+    this.pageRouter.navigateTo({
       url: "/pages/server/add/add",
     });
   },
