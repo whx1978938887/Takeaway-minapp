@@ -1,3 +1,6 @@
 {
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "my_select": "/components/m-select/m-select"
+  }
 }

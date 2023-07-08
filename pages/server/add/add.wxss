@@ -11,3 +11,6 @@
   margin-top: 10px;
   text-align: center;
 }
+.cell-style .van-cell{
+  height: 150px;
+}

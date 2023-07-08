@@ -4,6 +4,15 @@ Page({
     price: 0,
     fees: 0,
     food: "",
+    curfId: -1,
+    fruits: [
+      { name: "苹果", id: 1 },
+      { name: "西瓜", id: 2 },
+      { name: "李子", id: 3 },
+      { name: "梨", id: 4 },
+    ],
+    curfruitName: "",
+    title: "水果",
   },
   onLoad: function (options) {
     //Do some initialize when page load.

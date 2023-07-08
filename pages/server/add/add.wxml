@@ -1,4 +1,4 @@
-<!-- TODO: 商品价格、配送费、商品分类、主食插槽 -->
+<!-- TODO: 商品分类：自动改变单元格高度、主食插槽：每次点击增加插入新的单元格 -->
 <l-image-picker count="1" bind:linchange="onChangeTap" />
 <van-cell-group inset>
     <van-field required value="{{ name }}" label="商品标题" placeholder="请输入商品标题" border="{{ false }}" />
@@ -14,7 +14,9 @@
     </van-field>
 </van-cell-group>
 <van-cell-group inset>
-    <van-field required label="商品分类" placeholder="请输入商品分类" border="{{ false }}" />
+    <van-field required class="cell-style" label="商品分类" placeholder="请输入商品分类" border="{{ false }}">
+        <my_select slot="input" nowId="{{curfId}}" nameList="{{fruits}}" nowName="{{curfruitName}}" placeholder="请选择水果" bind:handleChange="changeFruit"></my_select>
+    </van-field>
 </van-cell-group>
 <van-cell-group inset>
     <van-field required value="{{ food }}" label="主食" border="{{ false }}">
