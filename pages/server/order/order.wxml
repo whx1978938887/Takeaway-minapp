@@ -1,0 +1,6 @@
+<van-tabs active="{{ active }}" color="#1989fa">
+    <van-tab title="全部">内容 1</van-tab>
+    <van-tab title="待出餐">内容 2</van-tab>
+    <van-tab title="已出餐">内容 3</van-tab>
+    <van-tab title="已完成">内容 4</van-tab>
+</van-tabs>

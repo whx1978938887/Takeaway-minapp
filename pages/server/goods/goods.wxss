@@ -39,3 +39,6 @@
   font-size: var(--sidebar-font-size, 14px);
   line-height: var(--sidebar-line-height, 20px);
 }
+.van-sidebar-item--selected{
+  border-color: var(--sidebar-selected-border-color,#1989fa) !important;
+}

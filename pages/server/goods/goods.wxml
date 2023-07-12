@@ -1,4 +1,4 @@
-<l-tabs>
+<l-tabs active-color="#1989fa">
     <l-tabpanel tab="全部" key="one" slot="one">
         <view class="tab-content" style="height:{{scrollHeight+'px'}}">
             <van-col span="6">
