@@ -14,14 +14,17 @@
     </van-field>
 </van-cell-group>
 <van-cell-group inset>
-    <van-field required class="cell-style" label="商品分类" placeholder="请输入商品分类" border="{{ false }}">
-        <my_select slot="input" nowId="{{curfId}}" nameList="{{fruits}}" nowName="{{curfruitName}}" placeholder="请选择水果" bind:handleChange="changeFruit"></my_select>
-    </van-field>
+    <van-field required value="{{classify}}" readonly="{{true}}" label="商品分类" placeholder="请输入商品分类" border="{{ false }}" />
 </van-cell-group>
 <van-cell-group inset>
     <van-field required value="{{ food }}" label="主食" border="{{ false }}">
         <view slot="input">+新增</view>
     </van-field>
+    <!-- <van-collapse inset value="{{ activeNames }}" bind:change="onChange">
+        <van-collapse-item title="标题1" name="1">代码是写出来给人看的，附带能在机器上运行</van-collapse-item>
+        <van-collapse-item title="标题2" name="2">代码是写出来给人看的，附带能在机器上运行</van-collapse-item>
+        <van-collapse-item title="标题3" name="3" disabled>代码是写出来给人看的，附带能在机器上运行</van-collapse-item>
+    </van-collapse> -->
 </van-cell-group>
 <view class="button-style">
     <van-button round type="info">保存</van-button>
