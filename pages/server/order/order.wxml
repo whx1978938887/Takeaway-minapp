@@ -1,6 +1,28 @@
 <van-tabs active="{{ active }}" color="#1989fa">
-    <van-tab title="全部">内容 1</van-tab>
-    <van-tab title="待出餐">内容 2</van-tab>
-    <van-tab title="已出餐">内容 3</van-tab>
-    <van-tab title="已完成">内容 4</van-tab>
+    <van-tab title="全部">
+        <view class="content-item" style="height:{{scrollHeight+'px'}}">
+            <view class="card">
+                <view>下单时间：{{date+time}}</view>
+                <van-card num="2" tag="标签0" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" />
+                <view class="button-style">
+                    <van-button round type="info">确认出餐</van-button>
+                </view>
+            </view>
+        </view>
+    </van-tab>
+    <van-tab title="待出餐">
+        <view class="content-item" style="height:{{scrollHeight+'px'}}">
+            <view>待出餐</view>
+        </view>
+    </van-tab>
+    <van-tab title="已出餐">
+        <view class="content-item" style="height:{{scrollHeight+'px'}}">
+            <view>已出餐</view>
+        </view>
+    </van-tab>
+    <van-tab title="已完成">
+        <view class="content-item" style="height:{{scrollHeight+'px'}}">
+            <view>已完成</view>
+        </view>
+    </van-tab>
 </van-tabs>

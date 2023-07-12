@@ -1,0 +1,16 @@
+.content-item {
+  background-color: #f2f3f5;
+}
+.card {
+  background-color: white;
+  margin: 0 auto;
+  width: 300px;
+  height: 180px;
+  border-radius: 5px;
+}
+.van-card {
+  background-color: white !important;
+}
+.button-style {
+  text-align: center;
+}
