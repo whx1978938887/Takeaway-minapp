@@ -1,16 +1,38 @@
 .content-item {
   background-color: #f2f3f5;
 }
+.text{
+  padding: 10px 16px;
+}
+.space{
+  height: 10px;
+}
 .card {
   background-color: white;
   margin: 0 auto;
-  width: 300px;
-  height: 180px;
+  width: 95%;
   border-radius: 5px;
+}
+.card-space{
+  height: 2px;
+}
+.detail{
+  background-color: #f2f3f5;
+  margin: 10px 16px;
+  border-radius: 5px;
+}
+.key{
+  padding-left: 20px;
+  line-height: 30px;
+}
+.value{
+  padding-left: 20px;
+  line-height: 30px;
 }
 .van-card {
   background-color: white !important;
 }
 .button-style {
+  margin: 10px auto;
   text-align: center;
 }
